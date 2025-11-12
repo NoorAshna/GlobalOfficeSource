@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlobalOffice Source - Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    />
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="GSO.png" alt="Brandlogo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+          <a href="Contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Get in <span>Touch</span></h1>
+            <p>
+              Have questions or ready to start your project? Contact us today
+              and our team will be happy to assist you with any inquiries or
+              service requests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    name="phone"
+                    placeholder="Your Phone"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+              </div>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn-primary w-100"
+                id="submitBtn"
+              >
+                Send Message
+                <span
+                  class="spinner-border spinner-border-sm loading-spinner"
+                  id="loadingSpinner"
+                  role="status"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <div
+                class="alert alert-success mt-3"
+                id="successAlert"
+                style="display: none"
+              >
+                Your message has been sent successfully! We'll get back to you
+                soon.
+              </div>
+              <div
+                class="alert alert-danger mt-3"
+                id="errorAlert"
+                style="display: none"
+              >
+                There was an error sending your message. Please try again later.
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-info">
+                <h4>Phone</h4>
+                <p>+1 832 367 3044</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <h4>Email</h4>
+                <p>info@GlobalOfficeSource.com</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info">
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h4>About GlobalOfficeSource</h4>
+            <p>
+              We provide innovative solutions to help businesses streamline
+              operations, enhance customer experiences, and drive growth in
+              today's competitive landscape.
+            </p>
+            <div class="social-icons mt-3">
+              <a ><i class="fab fa-facebook-f"></i></a>
+              <a ><i class="fab fa-twitter"></i></a>
+              <a ><i class="fab fa-linkedin-in"></i></a>
+              <a ><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Design & Graphics</a></li>
+              <li><a href="#">Content Writer</a></li>
+              <li><a href="#">Virtual Administrative Assistant</a></li>
+              <li><a href="#">Remote Monitoring</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt me-2"></i> --------</li>
+              <li><i class="fas fa-phone-alt me-2"></i> +1 832 367 3044</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> info@GlobalOfficeSource.com
+              </li>
+              <li>
+                <i class="fas fa-clock me-2"></i> Mon-Fri: 9:00 AM - 5:00 PM
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p>&copy; 2025 Global Office Source. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+    // Initialize EmailJS
+    (function() {
+        // Replace with your EmailJS user ID
+        emailjs.init("YOUR_EMAILJS_USER_ID");
+    })();
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get form elements
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const loadingSpinner = document.getElementById('');
+        const successAlert = document.getElementById('successAlert');
+        const errorAlert = document.getElementById('errorAlert');
+        
+        // Form submission handler
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Show loading spinner
+            submitBtn.disabled = true;
+            loadingSpinner.style.display = 'inline-block';
+            
+            // Get form data
+            const templateParams = {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                to_email: 'info@techflow.com'
+            };
+            
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function() {
+                    // Success
+                    successAlert.style.display = 'block';
+                    contactForm.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successAlert.style.display = 'none';
+                    }, 5000);
+                })
+                .catch(function(error) {
+                    // Error
+                    console.error('EmailJS error:', error);
+                    errorAlert.style.display = 'block';
+                    
+                    // Hide error message after 5 seconds
+                    setTimeout(() => {
+                        errorAlert.style.display = 'none';
+                    }, 5000);
+                })
+                .finally(function() {
+                    // Hide loading spinner
+                    submitBtn.disabled = false;
+                    loadingSpinner.style.display = 'none';
+                });
+        });
+    });
+</script>
+</body>
+</html>

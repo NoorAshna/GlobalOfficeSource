@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalOffice Source - Professional Service Provider</title>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" type="module" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html"><img src="GSO.png" alt="Brandlogo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary ms-3">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-shape"></div>
+        <div class="hero-circle"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Transform Your <span>Business</span> With Digital Excellence</h1>
+                    <p>We provide comprehensive professional services to help your business thrive in the digital landscape. Our expert team delivers tailored solutions for your unique needs.</p>
+                    <a href="Contact.html" class="btn btn-primary me-3">Start Your Journey</a>
+                    <a href="Services.html" class="btn btn-outline-dark">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div id="sphere-container"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions tailored to your business needs</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Customer Support</h3>
+                        <p>24/7 dedicated support to assist your customers with any inquiries or issues.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Custom website development with responsive design and modern technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Design & Graphics</h3>
+                        <p>Creative design solutions including branding, UI/UX, and marketing materials.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h3>Content Writer</h3>
+                        <p>Engaging content creation for websites, blogs, social media, and marketing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Virtual Assistant</h3>
+                        <p>Administrative support to manage schedules, emails, and day-to-day operations.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3>Remote Monitoring</h3>
+                        <p>Proactive system monitoring and maintenance to prevent downtime.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>CRM Development</h3>
+                        <p>Custom CRM solutions using GHL, HubSpot, Zoho One, Pipedrive, and Monday.com.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Email Marketing</h3>
+                        <p>Automated marketing workflows using Zapier, n8n, and Make.com.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- How We Work Section -->
+<section class="how-we-work text-white py-5">
+  <div class="container">
+    <h2 class="fw-bold mb-5 text-white">How We Work</h2>
+    <div class="timeline">
+      <!-- Step 1 -->
+      <div class="timeline-item left">
+        <div class="timeline-number">01</div>
+        <div class="timeline-content">
+          <h5 class="fw-bold">Consultation & Analysis</h5>
+          <p>We start by understanding your business goals, challenges, and requirements through in-depth consultation and comprehensive analysis.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h5 class="fw-bold">Strategy & Planning</h5>
+          <p>Our experts develop a customized strategy and detailed action plan tailored specifically to your business needs and objectives.</p>
+        </div>
+        <div class="timeline-number">02</div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-item left">
+        <div class="timeline-number">03</div>
+        <div class="timeline-content">
+          <h5 class="fw-bold">Implementation & Execution</h5>
+          <p>We execute the plan with precision, ensuring every detail is handled with excellence and attention to your requirements.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h5 class="fw-bold">Monitoring & Optimization</h5>
+          <p>Continuous monitoring, analysis, and optimization ensure your solutions deliver maximum results and ROI over time.</p>
+        </div>
+        <div class="timeline-number">04</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose Us</h2>
+            <p>The advantages that set us apart from the competition</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="benefit-card d-flex">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Expert Team</h3>
+                        <p>Our professionals bring years of industry experience and specialized knowledge to every project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="benefit-card d-flex">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Custom Solutions</h3>
+                        <p>We create tailored strategies and solutions designed specifically for your unique business needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="benefit-card d-flex">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Cutting-Edge Tech</h3>
+                        <p>We leverage the latest technologies and methodologies to deliver superior results.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="benefit-card d-flex">
+                    <div class="benefit-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Dedicated Support</h3>
+                        <p>Our team provides responsive, ongoing support to ensure your continued success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-circle"></div>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p class="mb-4">Take the first step toward digital excellence and sustainable growth.</p>
+                    <a href="Contact.html" class="btn btn-outline-light">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="#" class="footer-logo">Global<span>Source</span></a>
+                    <div class="footer-about">
+                        <p>We provide comprehensive professional services to help businesses thrive in the digital landscape with tailored solutions for unique needs.</p>
+                    </div>
+                    <div class="social-icons">
+                        <a  class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a  class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a  class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a  class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Customer Web Development</li>
+                        <li><a href="#">Design & Graphics</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">Virtual Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a>Our Team</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p> - - - - - - - -<br></p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <p>+1 832 367 3044</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p>info@Globalofficesource.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>© 2025 Global Office Source. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
