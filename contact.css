@@ -52,7 +52,10 @@
         .nav-link:hover:after {
             width: 100%;
         }
-        
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
         .btn-primary {
             background-color: var(--primary);
             border-color: var(--primary);

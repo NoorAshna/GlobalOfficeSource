@@ -92,7 +92,9 @@
             color: var(--text-light);
             padding: 100px 0;
         }
-        
+         .hero-section .highlight {
+            color: var(--primary);
+        }
         .section-title {
             position: relative;
             margin-bottom: 50px;

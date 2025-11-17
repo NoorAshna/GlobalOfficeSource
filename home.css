@@ -71,10 +71,10 @@
             color: var(--primary);
         } */
         .logo {
-  height: 40px;      
-  width: auto;       
-  display: block;     
-}
+        height: 40px;      
+        width: auto;       
+        display: block;     
+        }
 
         .nav-link {
             font-weight: 600;
@@ -98,7 +98,10 @@
         .nav-link:hover:after {
             width: 100%;
         }
-        
+        .dropdown:hover > .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
         /* Hero Section */
         .hero {
             position: relative;
@@ -590,9 +593,10 @@
                 margin-left: 0;
                 margin-right: 20px;
             }
+
         }
         
-        @media (max-width: 767px) {
+        @media (max-width: 1000px) {
             .hero {
                 padding: 60px 0;
             }
